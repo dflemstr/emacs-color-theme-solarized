@@ -122,6 +122,7 @@ in order to expand or compress the tonal range displayed."
            (header-line ((t (:foreground ,base0 :background ,base2))))
            (highlight ((t (:background ,base02))))
            (hl-line ((t (:background ,base02))))
+           (highline-face ((t (:background ,base02))))
            (isearch ((t (:foreground ,yellow :inverse-video t))))
            (lazy-highlight ((t (:background ,base2 :foreground ,base00))))
            (link ((t (:foreground ,violet :underline ,underline))))
@@ -293,7 +294,10 @@ in order to expand or compress the tonal range displayed."
            ;; whitespace
            (whitespace-empty ((t (:foreground ,red))))
            (whitespace-hspace ((t (:foreground ,orange))))
+           (whitespace-newline ((t (:foreground ,base02))))
            (whitespace-indentation ((t (:foreground ,base02))))
+           (whitespace-line
+            ((t (:background ,base02 :foreground ,red :weight ,bold))))
            (whitespace-space ((t (:foreground ,base02))))
            (whitespace-space-after-tab ((t (:foreground ,cyan))))
            (whitespace-space-before-tab ((t (:foreground ,red :weight ,bold))))
